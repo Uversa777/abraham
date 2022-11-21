@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Abraham's personal portfolio </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/muli" type="text/css"/>
+</head>
+<body>
+    <!--THis code will display the navigation bar and its nav links -->
+    <nav id="navbar">
+        <a href="#welcome-section" class="navLink" id="navLink1" onclick="changeColor()"> Home </a>
+        <a href="#projects" class="navLink" id="navLink2" onclick="changeColorAgain()"> Projects </a>
+        <a href="#contacts" class="navLink" id="navLink3" onclick="changeColorAnother()"> Contact </a>
+    </nav>
+
+    <!-- The following code specifies the 3 main sections of this page -->
+    <!-- Welcome section -->
+    <section id="welcome-section">
+        <h1 id="h1"> Hi, i am Abraham </h1> 
+        <!-- This is main text for the frontpage -->
+        <label for="h1"> a web developer </label> <br>
+        <a id="profile-link" href="https://github.com/Uversa777">
+            visit my github profile 
+        </a>
+        <!-- This is sub text  -->
+    </section> <!-- Welcome section -->
+
+    <!-- Projects section  -->
+    <section id="projects">
+        <h2> These are some of my projects </h2>
+        <hr>
+        <!-- Each project link is shaped like a tile
+        and arranged to grid -->
+        <div  class="project-tile">
+            <a href="https://codepen.io/uversa777/pen/VwQZPxq" class="project-tile-child"> 
+                <figure>
+                    <img src="" alt="" class="img">
+                    <figcaption>Tribute Page</figcaption>
+                </figure>
+            </a>
+            <a href="https://codepen.io/uversa777/pen/MWQjbze" class="project-tile-child"> 
+                <figure>
+                    <img src="" alt="" class="img">
+                    <figcaption>Survey form </figcaption>
+                </figure>
+            </a>
+            <a href="https://codepen.io/uversa777/pen/dyKPZYV" class="project-tile-child"> 
+                <figure>
+                    <img src="" alt="" class="img">
+                    <figcaption>Product landing page</figcaption>
+                </figure>
+            </a>
+            <a href="https://codepen.io/uversa777/pen/zYjxZyd" class="project-tile-child"> 
+                <figure>
+                    <img src="" alt="" class="img">
+                    <figcaption>Technical documentation page </figcaption>
+                </figure>
+            </a>
+        </div>
+
+
+
+        <!-- Below, there's a rectangular button that links to my 
+        code-pen profile -->
+        <a href="https://codepen.io/uversa777" target="_blank"><button> Show all ></button></a>
+    </section> <!-- Projects section -->
+    
+    <!-- contacts section -->
+    <section id="contacts">
+        <h3> Lets Work Together... </h3> 
+        <!-- The above is the main text and it's centered -->
+        <p class="sub-footer"> the journey begins here </p>
+        <hr> 
+        <!-- The links below are meant for my free-code-camp 
+        or portfolio profiles-->
+        <div class="contacts-container">
+            <a href="https://www.freecodecamp.org/uversa777" class="profile-link" target="_blank"> Free Code Camp </a>
+            <a href="https://codepen.io/uversa777" class="profile-link" target="_blank"> Code-pen </a>
+            <a href="https://github.com/Uversa777" class="profile-link" target="_blank"> Github </a>
+            <a href="https://web.facebook.com/profile.php?id=100073538431587" class="profile-link" target="_blank"> Facebook </a>
+            <a href="mailto:abrahamogah@yahoo>com subject=subject text" class="profile-link" target="_blank"> Email me </a>
+        </div>
+        <!-- The profile link must open in a new tab -->
+    </section> <!-- Contacts section -->
+
+    <!-- This code specifies the footer section of this page --> 
+    <footer id="footer">
+        <p>**This is just a fake portfolio. All the projects and contact details given are not real. </p>
+        <p> © Created for freeCodeCamp </p>
+    </footer>
+
+
+
+
+
+    <!--The following code links the html document to the javascript file -->
+    <script src="index.js"></script>
+</body>
+</html>

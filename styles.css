@@ -1,0 +1,380 @@
+/* hsl(112, 80%, 52%); 
+    hsl(232, 60%, 52%) BLUE*/
+
+
+/* The following code will 
+    reset the style-sheet */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 16px;
+        color: #f6f6f6;
+        font-family: 'MuliRegular', Arial, Helvetica, sans-serif;
+        font-style: normal;
+    }
+    
+    /* The following code declares 
+        the display settings for this page */
+    body {
+        background-image: url(https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+        background-size: cover;
+        background-position-y: top;
+        background-attachment: fixed;
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+    }
+    
+    /* The following code will style the NAVBAR */
+    #navbar {
+        background-color: rgba(230, 35, 61, 0.836);
+        grid-area: 1/1/2/2;
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 1px 10px 0.5px black;
+    }
+    .navLink {
+        padding: 25px 20px;
+        text-decoration: none;
+        color: #f6f6f6;
+        font-size: 1.1rem;
+        font-family: 'MuliRegular', Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+    }
+    
+    .navLink:hover {
+        font-size: 1.2rem;
+        /* background-color: hsla(232, 50%, 52%, 0.849); */
+        animation-name: slide;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes slide {
+        0% {
+            background-color: hsla(232, 50%, 52%, 0);
+        }
+        100% {
+            background-color: hsla(232, 50%, 52%, 0.849);
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .navLink {
+            padding: 20px 13px;
+            text-decoration: none;
+            color: #f6f6f6;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .navLink:hover {
+            font-size: 1em;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        #navbar {
+            background-color: rgba(230, 35, 61, 0.836);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .navLink {
+            padding: 15px 10px;
+            text-decoration: none;
+            color: #f6f6f6;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .navLink:hover {
+            background-color: hsl(232, 50%, 52%);
+        }
+    }
+    #navLink1 {
+        background-color: rgba(21, 22, 29, 0.9);
+    }
+    
+    /* @media screen and (max-width: 400px) {
+        #navbar {
+            background-color: rgba(230, 35, 61, 0.836);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .navLink {
+            padding: 10px 5px;
+            font-weight: bold;
+            font-size: 1vmin;
+        }
+    } */
+    
+    
+    /* The following code will style the WELCOME SECTION   */
+    #welcome-section {
+        background: linear-gradient(45deg, rgba(52, 52, 53, 0.9), rgba(21, 22, 29, 0.9));
+        grid-area: 1/1/2/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; 
+    }
+    h1 {
+        font-size: 5vmax;
+        animation: h1 8s infinite;
+    }
+    @keyframes h1 {
+        0% {
+            color: #f6f6f600;
+        }
+        20% {
+            color: #f6f6f6;
+        }
+        100% {
+            color: #f6f6f6;
+        }
+    }
+    label {
+        font-size: 3vmax;
+        animation: label 15s infinite;
+    }
+    
+    @keyframes label {
+        0% {
+            color: rgb(230, 35, 61);
+        }
+        40% {
+            color: rgb(230, 35, 61);
+        }
+        50% {
+            color: rgba(230, 35, 61, 0);
+        }
+        60% {
+            color: rgb(230, 35, 61);
+        }
+        100% {
+            color: rgb(230, 35, 61);
+        }
+    }
+    
+    
+    /* The code below is for the PROJECTS SECTION */
+    #projects {
+        background: linear-gradient(45deg, hsl(232, 40%, 32%), hsl(232, 40%, 52%), hsl(232, 40%, 32%));
+        grid-area: 2/1/3/2;
+        text-align: center;
+        max-width: 100%;
+        padding: 80px 0;
+    }
+    
+    h2 {
+        font-size: 3vmax;
+    }
+    @media screen and (max-width: 800px) {
+        h2 {
+            font-size: 4vmax;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+    }
+    
+    .project-tile {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding: 20px;
+    }
+    .project-tile-child {
+        background-color: rgba(21, 22, 29, 0.9);
+        width: 100%;
+        margin: 10px 0;
+        text-decoration: none;
+        color: #f6f6f6;
+    }
+    .project-tile-child:hover {
+        color: hsl(112, 80%, 52%);
+        background-color: rgba(31, 32, 37, 0.9);
+        box-shadow: 1px 1px 3px 3px;
+    }
+    
+    .img {
+        width: 100%;
+    }
+    @media screen and (min-width: 600px) {
+        .project-tile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 100% 1 1;
+        }
+    
+        .project-tile-child {
+            width: 45%;
+            margin: 10px;
+            font-size: 2vmax;
+        }
+    }
+    @media screen and (min-width: 800px) {
+        .project-tile-child {
+            font-size: 1.4rem;
+        }
+    }
+    @media screen and (min-width: 600px) {
+        .project-tile-child {
+            min-height: 100px;
+        }
+    }
+    
+    figcaption {
+        margin: 20px;
+    }
+    
+    button {
+        border: none;
+        background-color: rgb(21, 22, 29);
+        color: #f6f6f6;
+        font-size: 1rem;
+        font-family: 'MuliRegular', Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+    button:hover {
+        animation: show 1.5s forwards;
+    }
+    
+    @media screen and (min-width: 600px) {
+        button {
+            font-size: 1.2rem;
+            padding: 13px 20px;
+        }
+    }
+    
+    
+    @keyframes show {
+        0% {
+            background-color: rgba(230, 35, 61, 0);
+        }
+        100% {
+            background-color: rgba(230, 35, 61, 0.836);
+        }
+    }
+    
+    
+    /* The code below is for the CONTACTS SECTION */ 
+    #contacts {
+        background-color: rgb(21, 22, 29);
+        grid-area: 3/1/4/2;
+        min-height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h3 {
+        font-size: 5vmax;
+    }
+    .sub-footer {
+        font-size: 3vmax;
+        font-style: italic;
+        color: #e3e4f0f5;
+        line-height: 1;
+    }
+    .contacts-container {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-link {
+        text-decoration: none;
+        padding: 25px 20px;
+        text-decoration: none;
+        color: #f6f6f6;
+        font-size: 1.1rem;
+        font-family: 'MuliRegular', Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-style: normal; 
+    }
+    .profile-link:hover {
+        font-size: 1.1em;
+        color: rgba(230, 35, 61, 0.836);
+        text-decoration: underline hsl(232, 40%, 52%) 2px;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .profile-link {
+            padding: 20px 13px;
+            text-decoration: none;
+            color: #f6f6f6;
+            font-size: 1rem;
+        }
+        .profile-link:hover {
+            font-size: 1em;
+        }
+        .contacts-container {
+            margin-top: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .profile-link {
+            display: block;
+            width: 100%;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #f6f6f6;
+            font-size: 0.9rem;
+        }
+    }
+    hr {
+        width: 59%;
+        margin: 1vmax auto;
+    }
+    @media screen and (max-width: 600px) {
+        hr {
+            width: 92%;
+            margin: 1vmax auto;
+        }
+    }
+    
+    /* The code below is for the FOOTER SECTION */
+    #footer {
+        grid-area: 4/1/5/2;
+        z-index: 1;
+        background-color: rgb(21, 22, 29);
+        border-top: solid 5px rgba(230, 35, 61, 0.836);
+        text-align: center;
+        padding: 30px;
+        font-weight: lighter;
+        color: #f6f6f688;
+    }
+    
+    @media screen and (max-width: 400px) {
+        #footer {
+            font-size: 2.5vmax;
+        }
+    }
+    
+    @media screen and (min-width: 1000px) {
+        #footer {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px;
+        }
+    }
+    #profile-link {
+        display: none;
+    }
