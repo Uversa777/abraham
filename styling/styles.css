@@ -30,13 +30,8 @@ body {
 /* font-family: 'Manrope', sans-serif;   manrope bold */
 
 /* The code below styles the header / .nav */
-.container {
-    max-width: 1000px;
-    padding: 0 1.4rem;
-    margin: 0 auto;
-}
+
 #header {
-    border: solid 4px red;
     --navbar-height: 3rem;
     --navbar-height-desktop: 4rem;
     position: fixed;
@@ -46,29 +41,257 @@ body {
     right: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+.container {
+    max-width: 1000px;
+    padding: 0 0.1rem;
+    margin: 0 auto;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.navbar-item {
+    margin: 0.4em;
+    width: 100%;
+}
+.home-link,
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  font-family: var(--main-font);
+  font-weight: bold;
+  align-items: center;
+}
+.home-link:is(:focus, :hover) {
+    color: var(--text-color);
+}
+.navbar-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+    border-top: solid 0.5px var(--twitter-blue);
+}
+  
+.navbar-link:is(:focus, :hover) {
+    color: var(--twitter-blue);
+}
+.navbar-logo {
+    background-color: var(--twitter-blue);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0.6em;
+}
+#navbar-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    background-color: var(--twitter-blue);
+}
+#navbar-toggle:is(:focus, :hover) .icon-bar {
+    background-color: var(--text-color);
+}
+#navbar-toggle[aria-expanded='true'] .icon-bar:is(:first-child, :last-child) {
+    position: absolute;
+    margin: 0;
+    width: 30px;
+}
+#navbar-toggle[aria-expanded='true'] .icon-bar:first-child {
+    transform: rotate(45deg);
+}
+  
+#navbar-toggle[aria-expanded='true'] .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+  
+#navbar-toggle[aria-expanded='true'] .icon-bar:last-child {
+    transform: rotate(-45deg);
+}
 
-
-
-
+/* RESPONSIVE NAVBAR MENU */
+#navbar-menu {
+    position: fixed;
+    top: var(--navbar-height);
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+}
+#navbar-toggle[aria-expanded='true'] + #navbar-menu, #header {
+    background-color: rgba(0, 0, 0, 0.849);
+    opacity: 1;
+    visibility: visible;
+}
 
 
 /* the following declaration is used to add a background image */
 body {
-    background: linear-gradient(95deg, rgba(13, 15, 22, 0.849), rgba(0, 0, 0, 0.884)), url(/images/4\ copy.jpg);
-    background-position: center center;
+    background: linear-gradient(95deg, rgba(0, 0, 0, 0.949), rgba(0, 0, 0, 0.884)), url(/images/4\ copy.jpg), url(/images/4\ copy.jpg);
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
-/* media query for mobile devices */
-@media screen and (max-width: 600px) {
-    body {
-        --filter: blur(50px);
-        --filter2: blur(0px);
-        background: linear-gradient(95deg, rgba(13, 15, 22, 0.849), rgba(0, 0, 0, 0.884)), url(/images/4\ copy.jpg), url(/images/4\ copy.jpg);
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover, 60vmax, cover;
+
+.navbar-links {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    /* margin: 1.4rem;
+    border-radius: 5px; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+  
+#navbar-toggle[aria-expanded='true'] + #navbar-menu .navbar-links {
+    padding: 1em;
+}
+
+
+/* ____________________________________________________________________________________
+__________________________________________________________________________________________ */
+/* Styling for the main section  */
+#welcome-section {
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 1.9em;
+    font-family: var(--main-font);
+    font-weight: bolder;
+}
+p {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: var(--twitter-blue);
+    /* line-height: 3; */
+}
+#portfolio-link {
+    text-decoration: none;
+    line-height: 5;
+}
+#portfolio-button {
+    padding: 7px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: solid 3px white;
+    background: transparent;
+    color: var(--twitter-blue);
+}
+#portfolio-button:is(:focus, :hover) {
+    background-color: var(--gray-color);
+}
+
+#main-social-media {
+    position: absolute;
+    bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#social-media-links {
+    display: flex;
+    flex-direction: column;
+}
+.social-media-link {
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem 0;
+}
+
+/* ____________________________________________________________________________________
+__________________________________________________________________________________________
+-__________________________________________________________________________________________
+______________________________________________________________________________________ */
+/* media query for desktop view */
+@media screen and (min-width: 750px) {
+    #navbar-toggle,
+    #navbar-toggle[aria-expanded='true'] {
+      display: none;
+    }
+
+    #navbar-menu,
+    #navbar-toggle[aria-expanded='true'] + #navbar-menu {
+      visibility: visible;
+      opacity: 1;
+      position: static;
+      display: block;
+      height: 100%;
+    }
+
+    .navbar-links,
+    #navbar-toggle[aria-expanded='true'] + #navbar-menu .navbar-links {
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      position: static;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+    }
+
+    #header {
+        height: var(--navbar-height-desktop);
+        background: transparent;
+        left: 0;
+        right: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.021);
+    }
+    .navbar-link {
+
+        border-top: none;
+    }
+    /* __________________________________________________________
+    ______________________________________________________________________
+    
+    */
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1.9em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 5vw;
+    }
+    p {
+        font-size: 1.9em;
+    }
+    #portfolio-button {
+        padding: 10px 30px;
     }
 }
