@@ -1,0 +1,74 @@
+:root {
+    --orange-color: #Ff6a00;
+    --text-color: #D0d2d3;
+    --text-color-focus: white;
+    --gray-color: #222;
+    --twitter-blue: #1DA1F2;
+    --dark-blue: #02577A;
+    --main-font: 'Manrope', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 16px;
+    color: #f6f6f6;
+    font-family: 'Sora', sans-serif; /* manrope */
+    font-style: normal;
+}
+  
+/* The following code declares
+    the display settings for this page */
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* font-family: 'Manrope', sans-serif;   manrope bold */
+
+/* The code below styles the header / .nav */
+.container {
+    max-width: 1000px;
+    padding: 0 1.4rem;
+    margin: 0 auto;
+}
+#header {
+    border: solid 4px red;
+    --navbar-height: 3rem;
+    --navbar-height-desktop: 4rem;
+    position: fixed;
+    height: var(--navbar-height);
+    background: transparent;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+/* the following declaration is used to add a background image */
+body {
+    background: linear-gradient(95deg, rgba(13, 15, 22, 0.849), rgba(0, 0, 0, 0.884)), url(/images/4\ copy.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+/* media query for mobile devices */
+@media screen and (max-width: 600px) {
+    body {
+        --filter: blur(50px);
+        --filter2: blur(0px);
+        background: linear-gradient(95deg, rgba(13, 15, 22, 0.849), rgba(0, 0, 0, 0.884)), url(/images/4\ copy.jpg), url(/images/4\ copy.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover, 60vmax, cover;
+    }
+}
