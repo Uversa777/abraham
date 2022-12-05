@@ -3,9 +3,14 @@
     --text-color: #D0d2d3;
     --text-color-focus: white;
     --gray-color: #222;
+    --gray-color-with-opacity: rgba(34, 34, 34, 0.836);
     --twitter-blue: #1DA1F2;
+    --twitter-blue-with-opacity: #1da0f2c7;
+    --twitter-mid-blue: #1580c2;
+    --twitter-dark-blue: #10547e;
     --dark-blue: #02577A;
     --main-font: 'Manrope', sans-serif;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 * {
     margin: 0;
@@ -191,6 +196,7 @@ p {
     color: var(--twitter-blue);
     /* line-height: 3; */
 }
+
 #portfolio-link {
     text-decoration: none;
     line-height: 5;
@@ -202,6 +208,7 @@ p {
     border: solid 3px white;
     background: transparent;
     color: var(--twitter-blue);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 #portfolio-button:is(:focus, :hover) {
     background-color: var(--gray-color);
