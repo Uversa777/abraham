@@ -11,6 +11,17 @@
     --dark-blue: #02577A;
     --main-font: 'Manrope', sans-serif;
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+    /* --large-screen-text-size: 1.3rem;
+    --large-screen-h2-size: 2.2rem; */
+    --text-size: 1rem;
+    --h2-size: 1.5rem;
+}
+@media screen and (min-width: 750px) {
+    :root {
+        --text-size: 1.3rem;
+        --h2-size: 2.2rem;
+    }
 }
 * {
     margin: 0;
@@ -74,11 +85,11 @@ body {
     color: var(--text-color);
 }
 .navbar-link {
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     padding: 0.4em 0.8em;
     border-radius: 5px;
-    border-top: solid 0.5px var(--twitter-blue);
+    border: solid 0.2px var(--twitter-blue-with-opacity);
 }
   
 .navbar-link:is(:focus, :hover) {
@@ -236,12 +247,23 @@ p {
     color: white;
     margin: 0.5rem 0;
 }
+@media screen and (max-width: 300px) {
+    #main-social-media {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #social-media-links {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 /* ____________________________________________________________________________________
 __________________________________________________________________________________________
 -__________________________________________________________________________________________
 ______________________________________________________________________________________ */
-/* media query for desktop view */
+/* media query for desktop view => BOTH LARGE AND SMALL SCREENS*/
 @media screen and (min-width: 750px) {
     #navbar-toggle,
     #navbar-toggle[aria-expanded='true'] {
@@ -277,7 +299,7 @@ ________________________________________________________________________________
     }
     .navbar-link {
 
-        border-top: none;
+        border: none;
     }
     /* __________________________________________________________
     ______________________________________________________________________
@@ -301,4 +323,28 @@ ________________________________________________________________________________
     #portfolio-button {
         padding: 10px 30px;
     }
+}
+
+/* STYLING THE ABOUT SECTION __________________________________________________________
+________________________________________________________________________
+__________________________________________________________________________________ */
+
+#about-section {
+    background-color: #f6f6f6;
+    padding: 8vh 0;
+}
+#about-section-container {
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+h2 {
+    color: var(--twitter-blue);
+    font-size: var(--h2-size);
+    font-family: var(--main-font);
+}
+#about-me-paragraph {
+    font-size: var(--text-size);
+    color: #222;
+    font-weight: 400;
 }
