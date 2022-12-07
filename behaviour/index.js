@@ -13,3 +13,15 @@ const navbarLinksContainer = navbarMenu.querySelector('.navbar-links');
 
 navbarLinksContainer.addEventListener('click', (e) => e.stopPropagation());
 navbarMenu.addEventListener('click', toggleNavbarVisibility);
+
+// __________________________________________________________________________
+// Page manipulation
+function stayBlue() {
+  const navLink = document.querySelector('.navbar-link');
+  navLink.style.color = "#1DA1F2";
+}
+
+function rmNavbarVisibility() {
+  // isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.removeAttribute('aria-expanded', isNavbarExpanded);
+};
