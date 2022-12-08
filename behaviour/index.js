@@ -1,5 +1,6 @@
 const navbarToggle = document.querySelector('#navbar-toggle');
 let isNavbarExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
+let notNavbarExpanded = navbarToggle.getAttribute('aria-expanded') === 'false';
 
 function toggleNavbarVisibility() {
   isNavbarExpanded = !isNavbarExpanded;
@@ -23,5 +24,5 @@ function stayBlue() {
 
 function rmNavbarVisibility() {
   // isNavbarExpanded = !isNavbarExpanded;
-  navbarToggle.removeAttribute('aria-expanded', isNavbarExpanded);
+  navbarToggle.getAttribute('aria-expanded', notNavbarExpanded);
 };
