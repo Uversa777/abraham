@@ -1,6 +1,6 @@
 const navbarToggle = document.querySelector('#navbar-toggle');
 let isNavbarExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
-let notNavbarExpanded = navbarToggle.getAttribute('aria-expanded') === 'false';
+
 
 function toggleNavbarVisibility() {
   isNavbarExpanded = !isNavbarExpanded;
@@ -22,7 +22,3 @@ function stayBlue() {
   navLink.style.color = "#1DA1F2";
 }
 
-function rmNavbarVisibility() {
-  // isNavbarExpanded = !isNavbarExpanded;
-  navbarToggle.getAttribute('aria-expanded', notNavbarExpanded);
-};
