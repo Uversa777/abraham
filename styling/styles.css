@@ -25,6 +25,7 @@
     --text-size: 1rem;
     --h2-size: 1.5rem;
     --profile-picture-width: 30%;
+    --font-weight: 500;
 }
 @media screen and (min-width: 750px) {
     :root {
@@ -377,7 +378,7 @@ h2 {
     text-align: justify;
     font-size: var(--text-size);
     color: #222;
-    font-weight: 600;
+    font-weight: 500;
 }
 #mobile-underline, #mobile-underline-below {
     display: block;
