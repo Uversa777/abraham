@@ -377,7 +377,7 @@ h2 {
     text-align: justify;
     font-size: var(--text-size);
     color: #222;
-    font-weight: 500;
+    font-weight: 600;
 }
 #mobile-underline, #mobile-underline-below {
     display: block;
