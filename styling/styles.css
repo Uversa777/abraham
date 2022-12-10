@@ -374,7 +374,7 @@ h2 {
     font-family: var(--main-font);
 }
 #about-me-paragraph {
-    text-align: start;
+    text-align: justify;
     font-size: var(--text-size);
     color: #222;
     font-weight: 500;
