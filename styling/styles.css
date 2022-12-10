@@ -229,9 +229,10 @@ h1 {
     font-size: 1.9em;
     font-family: var(--main-font);
     font-weight: bolder;
+    /* line-height: 1; */
 }
 p {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: lighter;
     color: var(--twitter-blue);
     /* line-height: 3; */
@@ -265,9 +266,9 @@ p {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
-#social-media-links {
+.social-media-links {
     display: flex;
     flex-direction: column;
 }
@@ -278,11 +279,11 @@ p {
 }
 @media screen and (max-width: 300px) {
     #main-social-media {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    #social-media-links {
+    .social-media-links {
         display: flex;
         flex-direction: row;
     }
@@ -377,7 +378,7 @@ h2 {
 #about-me-paragraph {
     text-align: justify;
     font-size: var(--text-size);
-    color: #222;
+    color: black;
     font-weight: 500;
 }
 #mobile-underline, #mobile-underline-below {
@@ -398,7 +399,7 @@ h2 {
 
 #mobile-underline-blue, #mobile-underline-blue-below {
     width: 50%;
-    height: 10px;
+    height: 15px;
     opacity: 0.7;
 
 }
