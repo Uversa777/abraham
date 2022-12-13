@@ -31,7 +31,7 @@
     :root {
         --text-size: 1.2rem;
         --h2-size: 2.2rem;
-        --profile-picture-width: 150px;
+        --profile-picture-width: 120px;
     }
 }
 * {
@@ -252,7 +252,8 @@ p {
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 #portfolio-button:is(:focus, :hover) {
-    background-color: var(--gray-color);
+    cursor: pointer;
+    background-color: rgb(68, 68, 68);
 }
 
 #main-social-media {
@@ -330,9 +331,12 @@ ________________________________________________________________________________
     }
 
     .navbar-link {
-        justify-content: center;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
         border: none;
     }
+
     /* __________________________________________________________
     ______________________________________________________________________
     
@@ -381,27 +385,28 @@ h2 {
     color: black;
     font-weight: 500;
 }
-#mobile-underline, #mobile-underline-below {
+.mobile-underline, .mobile-underline-below, .white-underline, .white-underline-below {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #222;
     opacity: 0.5;
+    border: none;
 }
-#mobile-underline {
+.mobile-underline {
     margin: 0 0 4px 0;
+    background-color: #222;
 }
 
-#mobile-underline-below {
+.mobile-underline-below {
     margin: 4px 0 0 0;
-
+    background-color: #222;
 }
 
 #mobile-underline-blue, #mobile-underline-blue-below {
     width: 50%;
     height: 15px;
     opacity: 0.7;
-
+    border: none;
 }
 
 #mobile-underline-blue {
@@ -446,4 +451,66 @@ h2 {
         left: 75%;
         margin: 0 0 10px 0;
     }
+}
+
+/* STYLING THE PORTFOLIO SECTION ___________________________________________________
+___________________________________________________________________________________
+______________________________________________________________________________________
+_________________________________________________________________*/
+
+#portfolio-section {
+    padding: 8vh 0;
+}
+#portfolio-section-container {
+    max-width: 1000px;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+.white-underline {
+    margin: 0 0 4px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.white-underline-below {
+    margin: 4px 0 0 0;
+    background-color: rgb(255, 255, 255);
+}
+#portfolio-content-container {
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 20px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.74);
+}
+#caption-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.figure {
+    display: block;
+    /* border: solid 4px blue; */
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.portfolio-caption {
+    display: block;
+    color: white;
+    font-style: var(--main-font);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.click-to-view {
+    cursor: pointer;
+    background-color: var(--twitter-blue-with-opacity);
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1vw 0;
+}
+.click-to-view:is(:focus, :hover) {
+    background-color: rgb(66, 66, 66);
+    padding: 1.2vw 0;
 }
