@@ -414,7 +414,7 @@ h2 {
     right: 0; 
     left: 50%;
     margin: 0 0 10px 0;
-    background: linear-gradient(90deg, #1DA1F2, #105d8d);
+    background: linear-gradient(90deg, #1da0f2c5, #1572acad);
     transform: skewX(30deg);
     border-radius: 0 10px 10px 100%;
 }
