@@ -508,9 +508,10 @@ _________________________________________________________________*/
     color: white;
     font-size: 1.1rem;
     font-weight: bold;
-    padding: 1vw 0;
+    padding: 1.2vw 0;
 }
 .click-to-view:is(:focus, :hover) {
     background-color: rgb(66, 66, 66);
-    padding: 1.2vw 0;
+    padding: 1.4vw 0;
 }
+
