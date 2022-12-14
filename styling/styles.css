@@ -515,3 +515,30 @@ _________________________________________________________________*/
     padding: 1.4vw 0;
 }
 
+.my-portfolio-thumbnail {
+    height: 15vw;
+}
+#web-dev-thumbnail {
+    background: url(https://db3pap005files.storage.live.com/y4mFL7REVocIjZATjHhEMJ7riwsxmXnaGSFtzQCErExYxYQIYoTbx2Z5mOxHfRydQOvU0eN-n0LbrZX6shthygbIMCShIHUS1AVWIDz_O0qEHdjPu-Q_mrbw8yYcraZvCU1KKeaqycA9xF7H0NbNG3_QI-jjyjPC_KfbYrd_yB2rTy8asre5ZuSI87eNcmPkPFs?width=1920&height=1280&cropmode=none);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow: 0 0 8px 8px rgba(119, 166, 194, 0.295) inset; */
+}
+#ui-thumbnail {
+    background: url(https://db3pap005files.storage.live.com/y4m9sjqlIeJudZ24bCU1l23iB2TMw6yBo9rFp9nsqaq5qLUPvQdZRqAVZWnlwnDP5GzhgxvpOWy5D7GgdLQhZFZ28ZwucIw-j8YsyV7Ebpj-oHCO0owRiJAbGk1xjx_K9nDTI-Tg7fEZXH2K_w905IyD3065V8sf4192fQ-bPGi8CTSrm-g68hck0Nviy8DS71H?width=1060&height=664&cropmode=none);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow: 0 0 8px 8px rgba(185, 122, 177, 0.295) inset; */
+}
+#spreadsheet-thumbnail {
+    background: url(https://db3pap005files.storage.live.com/y4myQSTOJbi5xIfeVGi5-YPt-q7TRLgXyZtSk2YuC_548pASqXgYkTT6qexq_-tMBd8k6sM5yNGCtRxM7a1ZlnxY_3Xk3c2VEoKqi5iz-6UAMByJkZxR0YbHkStu-vSnrwhet0uz-H70wTJW2NTVpLnY5kT-Uvv9getbrb5rHIHYVvi22L8_JeVL9s0FYstC8Lb?width=1280&height=1174&cropmode=none);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-shadow: 0 0 8px 8px rgba(124, 185, 142, 0.295) inset; */
+}
