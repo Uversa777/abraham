@@ -72,7 +72,7 @@ body {
 }
 .container {
     max-width: 1000px;
-    padding: 0 0.1rem;
+    padding: 0 0.4em;
     margin: 0 auto;
 }
 .navbar-container {
@@ -113,7 +113,7 @@ body {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    margin: 0.6em;
+    margin: 0 0.6em 0 0;
 }
 #navbar-toggle {
     cursor: pointer;
@@ -167,6 +167,10 @@ body {
 #navbar-toggle[aria-expanded='true'] + #navbar-menu, #header {
     background-color: rgba(0, 0, 0, 0.849);
     opacity: 1;
+}
+
+#navbar-toggle[aria-expanded='true'] + #navbar-menu {
+
     visibility: visible;
     animation-name: fadeIn;
     animation-duration: 0.5s;
@@ -209,10 +213,7 @@ body {
 #navbar-toggle[aria-expanded='true'] + #navbar-menu .navbar-links {
     padding: 1em;
 }
-/* added */
-#navbar-toggle[aria-expanded='false'] + #navbar-menu .navbar-links {
-    padding: 1em;
-}
+
 
 /* ____________________________________________________________________________________
 __________________________________________________________________________________________ */
@@ -297,6 +298,11 @@ ________________________________________________________________________________
 ______________________________________________________________________________________ */
 /* media query for desktop view => BOTH LARGE AND SMALL SCREENS*/
 @media screen and (min-width: 750px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
     #navbar-toggle,
     #navbar-toggle[aria-expanded='true'] {
       display: none;
@@ -338,6 +344,15 @@ ________________________________________________________________________________
         justify-content: center;
         border: none;
     }
+    .navbar-link {
+        justify-content: flex-end;
+        /* width: 100%; */
+        padding: 0.4em 0 0.4em 0.8em;
+        border-radius: 5px;
+        border: none;
+    }
+
+
 
     /* __________________________________________________________
     ______________________________________________________________________
@@ -353,7 +368,7 @@ ________________________________________________________________________________
 
 @media screen and (min-width: 900px) {
     h1 {
-        font-size: 5vw;
+        font-size: 4em;
     }
     p {
         font-size: 1.9em;
@@ -491,7 +506,7 @@ _________________________________________________________________*/
     width: 100%;
 }
 .figure {
-    margin: 2px;
+    margin: 0 2px 12px 2px;
     display: block;
     /* border: solid 4px blue; */
     width: 40%;
@@ -501,6 +516,8 @@ _________________________________________________________________*/
 }
 .portfolio-caption {
     display: block;
+    z-index: 5;
+    text-align: center;
     color: white;
     font-style: var(--main-font);
     font-size: 1.2rem;
