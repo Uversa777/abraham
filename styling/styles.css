@@ -13,6 +13,7 @@
     --dark-blue-faded: #0C85D0;
     --purple: #F21DA1;
     --green: #1DF2D8;
+    --dark-green: #0f5e54;
 
     --main-font: 'Manrope', sans-serif;
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
@@ -112,8 +113,11 @@ body {
     border: solid 0.2px var(--twitter-blue-with-opacity);
 }
   
-.navbar-link:is(:focus, :hover, :active) {
+.navbar-link:is(:focus, :hover) {
     color: var(--twitter-blue);
+}
+.navbar-link:is(:active) {
+    color: var(--green);
 }
 .navbar-logo {
     background-color: var(--twitter-blue);
@@ -255,9 +259,9 @@ p {
     padding: 7px 20px;
     border-radius: 20px;
     cursor: pointer;
-    border: solid 3px white;
+    border: solid 3px var(--green);
     background: transparent;
-    color: var(--twitter-blue);
+    color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 #portfolio-button:is(:focus, :hover) {
@@ -399,6 +403,7 @@ ________________________________________________________________________________
     max-width: 1000px;
 }
 h2 {
+    text-align: center;
     color: var(--twitter-blue);
     font-size: var(--h2-size);
     font-family: var(--main-font);
@@ -427,8 +432,8 @@ h2 {
 }
 
 #mobile-underline-blue, #mobile-underline-blue-below {
-    width: 50%;
-    height: 15px;
+    width: 100%;
+    height: 10px;
     opacity: 0.7;
     border: none;
 }
@@ -436,17 +441,15 @@ h2 {
 #mobile-underline-blue {
     position: relative;
     right: 0; 
-    left: 50%;
+    left: 0;
     margin: 0 0 10px 0;
-    background: linear-gradient(90deg, #222, rgb(209, 209, 209));
-    transform: skewX(30deg);
-    border-radius: 0 10px 10px 100%;
+    background: linear-gradient(90deg, rgba(34, 34, 34, 0.359), rgba(209, 209, 209, 0.396));
+    border-radius: 0 10px 100% 100%;
 }
 #mobile-underline-blue-below {
     margin: 10px 0 0 0;
-    background: linear-gradient(90deg, rgb(211, 211, 211), #222);
-    transform: skewX(30deg);
-    border-radius: 10px 100% 0 10px;
+    background: linear-gradient(90deg, rgba(211, 211, 211, 0.384), rgba(34, 34, 34, 0.39));
+    border-radius: 100% 100% 0 10px;
 }
 #profile-picture {
     width: var(--profile-picture-width);
@@ -459,6 +462,10 @@ h2 {
     font-weight: 600;
     font-size: 2rem;
 }
+.hyperlink {
+    color: var(--dark-green);
+    font-weight: bolder;
+}
 
 /* MEDIa QUERY FOR LARGER SCREENS */
 @media screen and (mIn-width: 750px) {
@@ -466,13 +473,13 @@ h2 {
         display: none;
     } */
     #mobile-underline-blue, #mobile-underline-blue-below {
-        width: 25%;
+        width: 100%;
         height: 20px;
         opacity: 0.7;
     }
     #mobile-underline-blue {
         right: 0; 
-        left: 75%;
+        left: 0;
         margin: 0 0 10px 0;
     }
 }
@@ -585,12 +592,20 @@ video {
 }
 #footer {
     background-color: var(--gray-color);
-    border-top: solid 8px var(--twitter-blue-with-opacity);
     padding: var(--section-padding);
-    border-radius: 100px 100px 0 0;
 }
 #footer-container {
     padding: var(--container-padding);
     margin: var(--container-margin);
     max-width: 1000px;
+}
+.footer-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    margin: 1em;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
 }
