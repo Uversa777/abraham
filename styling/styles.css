@@ -1,5 +1,6 @@
 :root {
-    --orange-color: #Ff6a00;
+    --orange-color: #F26E1D;
+    --orange-color-with-opacity: #f26f1dc4;
     --text-color: #D0d2d3;
     --text-color-focus: white;
     --gray-color: #222;
@@ -7,9 +8,12 @@
     --twitter-blue: #1DA1F2;
     --twitter-blue-with-opacity: #1da0f2c7;
     --twitter-blue-with-opacity-faded: #7accffc7;
-    --twitter-mid-blue: #1580c2;
-    --twitter-dark-blue: #10547e;
-    --dark-blue: #02577A;
+    --twitter-deep-blue: #1D37F2;
+    --twitter-dark-blue: #0C85D0;
+    --dark-blue-faded: #0C85D0;
+    --purple: #F21DA1;
+    --green: #1DF2D8;
+
     --main-font: 'Manrope', sans-serif;
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     --container-padding: 0 0.5rem;
