@@ -252,8 +252,7 @@ h1 {
 p {
     font-size: 1.4em;
     font-weight: lighter;
-    /* color: var(--twitter-blue); */
-    color: black;
+    color: var(--twitter-blue);
     /* line-height: 3; */
 }
 
@@ -294,7 +293,8 @@ p {
 }
 .social-media-link {
     text-decoration: none;
-    color: white;
+    color: var(--twitter-blue-with-opacity-faded);
+    font-size: 1.2rem;
     margin: 0.5rem 0;
 }
 @media screen and (max-width: 300px) {
@@ -625,6 +625,7 @@ video {
 .footer-links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     font-size: 1.5rem;
 }
 .top-footer-links {
