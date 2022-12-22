@@ -621,9 +621,16 @@ video {
     cursor: pointer;
     text-decoration: none;
     color: white;
-    margin: 1em;
 }
 .footer-links {
     display: flex;
     justify-content: center;
+    font-size: 1.5rem;
+}
+.top-footer-links {
+    flex-direction: column;
+    align-items: center;
+}
+.bottom-links {
+    margin: 0.7em;
 }
