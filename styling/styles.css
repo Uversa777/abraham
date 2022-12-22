@@ -293,7 +293,7 @@ p {
 }
 .social-media-link {
     text-decoration: none;
-    color: var(--twitter-blue-with-opacity-faded);
+    color: var(--text-color);
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
