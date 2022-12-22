@@ -19,10 +19,13 @@
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     --container-padding: 0 0.5rem;
     --container-margin: 0 auto;
+    --container-border-radius: 20px;
     --section-padding: 8vh 0;
     /* #about-section {
         background-color: #f6f6f6;
         padding: 8vh 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.164); {SECTION}
     }
     #about-section-container {
         padding: 0 0.5rem;
@@ -394,13 +397,17 @@ ________________________________________________________________________
 __________________________________________________________________________________ */
 
 #about-section {
-    background-color: #f6f6f6;
-    padding: 8vh 0;
+    background-color: #dadbdb;
+    padding: 8vh 0.5rem;
 }
 #about-section-container {
+    background-color: #f6f6f6;
     padding: 0 0.5rem;
     margin: 0 auto;
     max-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+    border-bottom: solid 4px var(--dark-green);
+    border-radius: var(--container-border-radius);
 }
 h2 {
     text-align: center;
@@ -490,12 +497,17 @@ ________________________________________________________________________________
 _________________________________________________________________*/
 
 #portfolio-section {
-    padding: 8vh 0;
+    background-color: gray;
+    padding: 8vh 0.5rem;
 }
 #portfolio-section-container {
-    max-width: 1000px;
-    padding: 0.5rem;
+    background-color: #222;
+    padding: 0 0.5rem;
     margin: 0 auto;
+    max-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+    border-bottom: solid 4px var(--dark-green);
+    border-radius: var(--container-border-radius);
 }
 .white-underline {
     margin: 0 0 4px 0;
@@ -507,7 +519,7 @@ _________________________________________________________________*/
     background-color: rgb(255, 255, 255);
 }
 #portfolio-content-container {
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: #222;
     border-radius: 20px;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.74);
 }
@@ -544,16 +556,14 @@ _________________________________________________________________*/
     font-size: 1.1rem;
     font-weight: bold;
     padding: 1.2vw 0;
-
-
-    border: solid 3px var(--dark-green);
-    background: transparent;
-    color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    background-color: var(--twitter-blue-with-opacity-faded);
+    border: solid 3px var(--twitter-blue-with-opacity);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 1); */
 }
 .click-to-view:is(:focus, :hover) {
     background-color: rgb(102, 102, 102);
     padding: 1.4vw 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
 .my-portfolio-thumbnail {
