@@ -1,0 +1,82 @@
+:root {
+    --orange-color: #F26E1D;
+    --orange-color-with-opacity: #f26f1dc4;
+    --text-color: #D0d2d3;
+    --text-color-focus: white;
+    --gray-color: #222;
+    --gray-color-with-opacity: rgba(34, 34, 34, 0.836);
+    --twitter-blue: #1DA1F2;
+    --twitter-blue-with-opacity: #1da0f2c7;
+    --twitter-blue-with-opacity-faded: #7accffc7;
+    --twitter-deep-blue: #1D37F2;
+    --twitter-dark-blue: #0C85D0;
+    --dark-blue-faded: #0C85D0;
+    --purple: #F21DA1;
+    --green: #1DF2D8;
+    --dark-green: #0f5e54;
+
+    --main-font: 'Manrope', sans-serif;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    --container-padding: 0 0.5rem;
+    --container-margin: 0 auto;
+    --container-border-radius: 20px;
+    --section-padding: 8vh 0;
+    --section-background: #dadbdb;
+    --gray: gray;
+    /* #about-section {
+        background-color: #f6f6f6;
+        padding: 8vh 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.164); {SECTION}
+    }
+    #about-section-container {
+        padding: 0 0.5rem;
+        margin: 0 auto;
+        max-width: 1000px;
+    } */
+    /* --large-screen-text-size: 1.3rem;
+    --large-screen-h2-size: 2.2rem; */
+    --text-size: 0.95rem;
+    --h2-size: 1.5rem;
+    --profile-picture-width: 30%;
+    --font-weight: 500;
+}
+@media screen and (min-width: 750px) {
+    :root {
+        --text-size: 1.2rem;
+        --h2-size: 2.2rem;
+        --profile-picture-width: 120px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 15px;
+    color: #f6f6f6;
+    font-family: 'Sora', sans-serif; /* manrope */
+    font-style: normal;
+}
+  
+/* The following code declares
+    the display settings for this page */
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* font-family: 'Manrope', sans-serif;   manrope bold */
+
+/* The code below styles the header / .nav */
+#top-section {
+    margin: auto;
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
