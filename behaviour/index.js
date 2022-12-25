@@ -1,3 +1,28 @@
+const h1 = document.querySelector('#h1');
+const text = "Hi, i am Abraham Ogah";
+const speed = 150;
+i = -1;
+
+function typeText() {
+  if (i < text.length) {
+    h1.innerHTML += text.charAt(i);
+    i++;
+  } 
+}
+setInterval(typeText, speed);
+
+const description = document.querySelector('.first-caption');
+function displayCaption() {
+  description.classList.add('first-c');
+}
+setTimeout(displayCaption, 3150);
+
+const displayBtn = document.querySelector('.portfolio-button');
+function displayButton() {
+  displayBtn.classList.add('displayBtn');
+}
+setTimeout(displayButton, 4950);
+
 const navbarToggle = document.querySelector('#navbar-toggle');
 let isNavbarExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
 

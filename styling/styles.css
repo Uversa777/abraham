@@ -260,18 +260,38 @@ h1 {
     font-weight: bolder;
     /* line-height: 1; */
 }
-p {
+.first-caption {
+    display: none;
+    /* line-height: 3; */
+}
+.first-c {
+    display: block;
     font-size: 1.4em;
     font-weight: lighter;
     color: var(--twitter-blue);
-    /* line-height: 3; */
+    animation-name: caption;
+    animation-duration: 1S;
+}
+@keyframes caption {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 1.4em;
+    }
 }
 
 #portfolio-link {
     text-decoration: none;
     line-height: 5;
 }
-#portfolio-button {
+.portfolio-button {
+    display: none;
+
+}
+.displayBtn {
+    display: block;
+    margin: 1rem 0;
     padding: 7px 20px;
     border-radius: 20px;
     cursor: pointer;
@@ -279,8 +299,20 @@ p {
     background: transparent;
     color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    animation-name: port;
+    animation-duration: 2s;
 }
-#portfolio-button:is(:focus, :hover) {
+@keyframes port {
+    0% {
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.671);
+    }
+    100% {
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+.displayBtn:is(:focus, :hover) {
     cursor: pointer;
     background-color: rgb(68, 68, 68);
 }
@@ -306,7 +338,7 @@ p {
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.3rem;
-    margin: 0.5rem 0;
+    margin: 0.52rem;
 }
 @media screen and (max-width: 300px) {
     #main-social-media {
@@ -398,11 +430,51 @@ ________________________________________________________________________________
     h1 {
         font-size: 4em;
     }
-    p {
+    .first-c {
+        display: block;
         font-size: 1.9em;
+        font-weight: lighter;
+        color: var(--twitter-blue);
+        animation-name: caption;
+        animation-duration: 1S;
     }
-    #portfolio-button {
+    @keyframes caption {
+        0% {
+            font-size: 0;
+        }
+        100% {
+            font-size: 1.9em;
+        }
+    }
+    .portfolio-button {
+        display: none;
+        
+    }
+    .displayBtn {
+        display: block;
         padding: 10px 30px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: solid 3px var(--green);
+        background: transparent;
+        color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+        animation-name: port;
+        animation-duration: 2s;
+    }
+    @keyframes port {
+        0% {
+            opacity: 0;
+            background-color: rgba(255, 255, 255, 0.671);
+        }
+        100% {
+            opacity: 1;
+            background-color: transparent;
+        }
+    }
+    .displayBtn:is(:focus, :hover) {
+        cursor: pointer;
+        background-color: rgb(68, 68, 68);
     }
     #hire-me-button {
         width: 100px;
