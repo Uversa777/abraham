@@ -1,20 +1,24 @@
 // The following javascript functions wil animate the 
 // test and button on the home-screen.
 const h1 = document.querySelector('#h1');
-const text = "Hi, i am Abraham Ogah";
-const speed = 150;
+const text = "i am Abraham Ogah";
+const speed = 50;
 i = -1;
 
-function typeText() {
-  // <i> represents the number of characters to be selected from the 
-  // text variable declared above. <i> is incremented each time the function
-  // is called.  
-  if (i < text.length) {
-    h1.innerHTML += text.charAt(i);
-    i++;
-  } 
+function execute() {
+  function typeText() {
+    // <i> represents the number of characters to be selected from the 
+    // text variable declared above. <i> is incremented each time the function
+    // is called.  
+    if (i < text.length) {
+      h1.innerHTML += text.charAt(i);
+      i++;
+    }
+  }
+  // setInterval(typeText, speed);
+  setInterval(typeText, speed);
 }
-setInterval(typeText, speed);
+setTimeout(execute, 1000);
 
 const description = document.querySelector('.first-caption');
 function displayCaption() {
@@ -27,6 +31,7 @@ setTimeout(displayCaption, 3150);
 const displayBtn = document.querySelector('.portfolio-button');
 function displayButton() {
   displayBtn.classList.add('displayBtn');
+  // displayBtn.classList.add('sub');
 }
 setTimeout(displayButton, 4950);
 

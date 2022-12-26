@@ -312,11 +312,14 @@ h1 {
         background-color: transparent;
     }
 }
+
 .displayBtn:is(:focus, :hover) {
     cursor: pointer;
     background-color: rgb(68, 68, 68);
 }
-
+.displayBtn:is(:active) {
+    background-color: rgba(255, 244, 244, 0.596);
+}
 #main-social-media {
     position: absolute;
     bottom: 30px;
@@ -472,6 +475,7 @@ ________________________________________________________________________________
             background-color: transparent;
         }
     }
+
     .displayBtn:is(:focus, :hover) {
         cursor: pointer;
         background-color: rgb(68, 68, 68);
