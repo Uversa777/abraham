@@ -158,3 +158,15 @@ body {
 .class-page-content::-webkit-scrollbar-thumb:hover {
   background: rgb(85, 85, 85);
 }
+
+.paragraph-black {
+    text-align: justify;
+    font-size: var(--text-size);
+    color: black;
+    font-weight: 500;
+    margin: var(--text-size) 0;
+}
+h3 {
+    color: black;
+    text-align: center;
+}
