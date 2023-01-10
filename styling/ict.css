@@ -92,7 +92,7 @@ body {
     border-radius: 10px;
 }
 #dropdown-button:is(:hover) {
-    background-color: rgb(155, 233, 210);
+    background-color: var(--twitter-blue-with-opacity-faded);
 }
 #dropdown-button:is(:active) {
     background-color: var(--button-main-active-color);
@@ -117,7 +117,7 @@ body {
     background-color: var(--twitter-dark-blue);
 }
 .dropdown-link button:is(:hover) {
-    background-color: rgb(139, 203, 255);
+    background-color: gray;
 }
 .dropdown-link button:is(:active) {
     background-color: var(--button-main-active-color);
@@ -125,7 +125,7 @@ body {
 
 /* style the button for ict_year_eleven.html */
 .class-page-button:is(:hover) {
-    background-color: rgb(155, 233, 210);
+    background-color: gray;
 }
 .class-page-button:is(:active) {
     background-color: var(--button-main-active-color);
