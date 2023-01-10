@@ -170,3 +170,6 @@ h3 {
     color: black;
     text-align: center;
 }
+ul {
+    list-style: georgian;
+}
