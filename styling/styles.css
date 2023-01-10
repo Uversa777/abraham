@@ -486,11 +486,11 @@ ________________________________________________________________________________
         }
     }
 
-    .displayBtn:is(:focus, :hover) {
+    .displayBtn:is(:hover) {
         cursor: pointer;
         background-color: rgb(68, 68, 68);
     }
-    .portfolio-button:is(:active) {
+    .portfolio-button:is(:focus, :active) {
         background-color: rgba(255, 244, 244, 0.596);
     }
     .portfolio-button:is(:focus, :hover) {
@@ -532,7 +532,9 @@ ________________________________________________________________________________
     margin: 0 auto;
     max-width: 1000px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
-    border-bottom: solid 4px var(--twitter-blue);
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, var(--twitter-blue), var(--green), var(--purple), var(--green), var(--twitter-blue)) 1;
     border-radius: var(--container-border-radius);
 }
 h2 {
@@ -632,7 +634,9 @@ _________________________________________________________________*/
     margin: 0 auto;
     max-width: 1000px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
-    border-bottom: solid 4px var(--twitter-blue);
+    border-bottom-width: 7px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, var(--twitter-blue), var(--green), var(--purple), var(--green), var(--twitter-blue)) 1;
     border-radius: var(--container-border-radius);
 }
 .white-underline {
@@ -717,7 +721,9 @@ _________________________________________________________________*/
 .other-portfolio-links {
     display: block;
     color: var(--twitter-blue-with-opacity-faded);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 @media screen and (mIn-width: 750px) {
