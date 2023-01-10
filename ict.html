@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Web development projects - Abraham Itsoghena Ogah </title>
+    <link rel="stylesheet" href="/styling/ict.css">
     <link rel="stylesheet" href="/styling/styles.css">
     <link rel="stylesheet" href="/styling/auxilary.css">
     <!-- MANROPE BOLD -->
@@ -41,11 +42,11 @@
               <!-- This is the declaration for the classList -->
               <div id="navbar-menu" aria-labelledby="navbar-toggle">
                 <ul class="navbar-links">
-                  <li class="navbar-item"><a class="navbar-link" href="/index.html#" onclick="location.reload()">Home</a></li>
-                  <li class="navbar-item"><a class="navbar-link" href="/index.html#about-section" onclick="location.reload()">About</a></li>
-                  <li class="navbar-item"><a class="navbar-link" href="#" onclick="location.reload()">Resume</a></li>
-                  <li class="navbar-item"><a class="navbar-link" href="/index.html#portfolio-section" onclick="location.reload()">portfolio</a></li>
-                  <li class="navbar-item"><a class="navbar-link" href="/index.html#contact" onclick="location.reload()"><button id="hire-me-button">Hire me</button></a></li>
+                  <li class="navbar-item"><a class="navbar-link" href="/index.html#">Home</a></li>
+                  <li class="navbar-item"><a class="navbar-link" href="/index.html#about-section">About</a></li>
+                  <li class="navbar-item"><a class="navbar-link" href="#">Resume</a></li>
+                  <li class="navbar-item"><a class="navbar-link" href="/index.html#portfolio-section">portfolio</a></li>
+                  <li class="navbar-item"><a class="navbar-link" href="/index.html#footer"><button id="hire-me-button">Hire me</button></a></li>
                 </ul>
               </div>
             </nav>
@@ -53,9 +54,10 @@
 
           <!-- the following branch shows the main content part of this webpage -->
           <main> 
+            <!-- Declare content for the top section -->
             <section id="top-section">
               <h1> I.C.T / Data processing </h1>
-              <a href="/index.html#portfolio-section" id="portfolio-link"><button class="portfolio-button"> homepage </button></a>
+              <a href="./index.html#portfolio-section" id="portfolio-link"><button class="portfolio-button"> homepage </button></a>
               <div class="footer-links">
                 <a class="footer-link bottom-links" href="mailto:abrahamogah@yahoo.com"><i class="fa-regular fa-envelope"></i></a>
                 <a class="footer-link bottom-links" href=""><i class="fa-brands fa-facebook"></i></a>
@@ -63,6 +65,30 @@
                 <a class="footer-link bottom-links" href=""><i class="fa-brands fa-instagram"></i></a>
                 <a class="footer-link bottom-links" href=""><i class="fa-brands fa-square-twitter"></i></a>
               </div>
+            </section>
+
+            <!-- Create n new section for the year 10 and year 11() -->
+            <section id="classes-section">
+              <div id="classes-section-container">
+                <h2> Classes </h2>
+                <hr class="mobile-underline hr-first">
+                <hr id="mobile-underline-blue" class="hr-second">
+
+                <div id="dropdown-container">
+                  <button type="button" id="dropdown-button">Click to select a class</button>
+                  <div class="dropdown-links-none">
+                    <a href="" class="dropdown-link">
+                      <button> Year 10 </button>
+                    </a>
+                    <a href="" class="dropdown-link">
+                      <button> Year 11 </button>
+                    </a>
+                  </div>
+                  <!-- Dropdown links -->
+                </div>
+                <!-- dropdown container -->
+              </div>
+              <!-- classes-section-container -->
             </section>
           </main>
 
@@ -86,7 +112,8 @@
     
             </div>
           </footer>
-    <script src="/behaviour/index.js"></script>      
+    <script src="/behaviour/index.js"></script>  
+    <script src="/behaviour/ict.js"></script>
     <script src="https://kit.fontawesome.com/9b6bfe8001.js" crossorigin="anonymous"></script>
 </body>
 </html>

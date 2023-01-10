@@ -1,8 +1,9 @@
+
 // The following javascript functions wil animate the 
 // test and button on the home-screen.
 const h1 = document.querySelector('#h1');
 const text = "i am Abraham Ogah";
-const speed = 50;
+const speed = 40;
 i = -1;
 
 function execute() {
@@ -18,23 +19,26 @@ function execute() {
   // setInterval(typeText, speed);
   setInterval(typeText, speed);
 }
-setTimeout(execute, 1000);
+setTimeout(execute, 1600);
 
 const description = document.querySelector('.first-caption');
 function displayCaption() {
   // this function assigns a new CSS class to the 
-  // html element with the class name <first-caption>
+  // html element with the class name <first-caption>.
+  // The properties in this new class are responsible for the text animation 
   description.classList.add('first-c');
 }
 setTimeout(displayCaption, 3150);
 
-const displayBtn = document.querySelector('.portfolio-button');
+const displayBtn = document.querySelector('.sub');
 function displayButton() {
   displayBtn.classList.add('displayBtn');
   // displayBtn.classList.add('sub');
 }
 setTimeout(displayButton, 4950);
 
+// ______________________________________________________________________________________________________________
+// Write a javascript function to toggle navbar visibility
 const navbarToggle = document.querySelector('#navbar-toggle');
 let isNavbarExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
 
@@ -53,25 +57,21 @@ navbarLinksContainer.addEventListener('click', (e) => e.stopPropagation());
 navbarMenu.addEventListener('click', toggleNavbarVisibility);
 
 // __________________________________________________________________________
-// Page manipulation
+// Make the navbar links tur blue when active
 function stayBlue() {
   const navLink = document.querySelector('.navbar-link');
   navLink.style.color = "#1DA1F2";
 }
 
 
-
-let notNavbarExpanded = navbarToggle.getAttribute('aria-expanded') === 'false';
-function removeNavMenu() {
-  notNavbarExpanded = !isNavbarExpanded;
-  navbarToggle.setAttribute('aria-expanded', notNavbarExpanded);
-}
-
+// // Make the navbar menu disappear when a nav-link is clicked
 const menuItem1 = document.querySelector('#home');
 const menuItem2 = document.querySelector('#about');
 const menuItem3 = document.querySelector('#portfolio');
 const menuItem4 = document.querySelector('#contact');
-menuItem1.addEventListener("click", removeNavMenu);
-menuItem2.addEventListener("click", removeNavMenu);
-menuItem3.addEventListener("click", removeNavMenu);
-menuItem4.addEventListener("click", removeNavMenu);
+menuItem1.addEventListener("click", toggleNavbarVisibility);
+menuItem2.addEventListener("click", toggleNavbarVisibility);
+menuItem3.addEventListener("click", toggleNavbarVisibility);
+menuItem4.addEventListener("click", toggleNavbarVisibility);
+
+
