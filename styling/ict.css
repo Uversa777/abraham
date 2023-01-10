@@ -79,7 +79,9 @@ body {
     margin: var(--section-padding);
     background-color: var(--section-background);
 }
-#dropdown-button, .dropdown-link button {
+#dropdown-button, 
+.class-page-button, 
+.dropdown-link button {
     cursor: pointer;
     width: 100%;
     font-size: var(--text-size);
@@ -120,3 +122,12 @@ body {
     background-color: var(--button-main-active-color);
 }
 
+/* style the button for ict_year_eleven.html */
+.class-page-button:is(:hover) {
+    background-color: rgb(155, 233, 210);
+}
+.class-page-button:is(:active) {
+    background-color: var(--button-main-active-color);
+}
+
+class-page-content
