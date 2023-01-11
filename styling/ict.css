@@ -130,32 +130,36 @@ body {
 .class-page-button:is(:active) {
     background-color: var(--button-main-active-color);
 }
-
-.class-page-content {
+.classes-section-content {
+    margin: 1rem;
+}
+.classes-section-content {
+    display: block;
     color: black;
     font-size: var(--text-size);
     height: 70vh;
     overflow-y: scroll;
     /* padding: var(--text-size); */
-    margin: var(--text-size);
+    /* margin: var(--text-size); */
+    padding: var(--text-size);
 }
 /* width */
-.class-page-content::-webkit-scrollbar {
+.classes-section-content::-webkit-scrollbar {
   width: 7px;
 }
 
 /* Track */
-.class-page-content::-webkit-scrollbar-track {
+.classes-section-content::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-.class-page-content::-webkit-scrollbar-thumb {
+.classes-section-content::-webkit-scrollbar-thumb {
   background: gray;
 }
 
 /* Handle on hover */
-.class-page-content::-webkit-scrollbar-thumb:hover {
+.classes-section-content::-webkit-scrollbar-thumb:hover {
   background: rgb(85, 85, 85);
 }
 
@@ -170,6 +174,8 @@ h3 {
     color: black;
     text-align: center;
 }
-ul {
-    list-style: georgian;
+#mcu-question-container {
+    display: block;
+    margin: 1rem;
+    color: black;
 }
