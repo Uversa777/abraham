@@ -130,6 +130,7 @@ body {
 .class-page-button:is(:active) {
     background-color: var(--button-main-active-color);
 }
+
 .classes-section-content {
     margin: 1rem;
 }
